@@ -11,7 +11,6 @@ import { Entypo } from '@expo/vector-icons'
 import { Constants } from 'expo';
 import { setLocalNotification } from './utils/helper'
 
-import './ReactotronConfig'
 
 const Tabs = TabNavigator({
   DeckList: {
