@@ -18,7 +18,10 @@ class AddDeck extends Component {
        "questions":[]
    }
    addDeck({ entry, key })
-   this.props.navigation.navigate('Home')
+  this.props.navigation.navigate(
+    'DeckDetail',
+    { title: this.state.title}
+  )
 
   }
   

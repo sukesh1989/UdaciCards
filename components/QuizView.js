@@ -94,6 +94,10 @@ class QuizView extends Component {
 <Text style={styles.resultsText}>Incorrect: {this.state.incorrectCount}</Text>
 <Text style={styles.resultsText}> Percentage: {(this.state.correctCount/this.state.questionsCount*100).toFixed(2)}%</Text>
 <Button title="Retake Quiz" onPress={() => this.retakeQuiz(this)} />
+<Button title="Back to Deck" onPress={() => this.props.navigation.navigate(
+                                    'DeckDetail',
+                                    { title: this.props.navigation.state.params.title}
+                                  )}/>
    </View>:
 
             <View>
